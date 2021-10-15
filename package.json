@@ -1,0 +1,24 @@
+{
+  "name": "tz-converter-zachtheis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tz.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RVCC-IDMX/tz-converter-ZachTheis.git"
+  },
+  "keywords": [],
+  "author": "Zach Theis <G00286554@stu.raritanval.edu> (https://github.com/ZachTheis)",
+  "license": "RVCC",
+  "bugs": {
+    "url": "https://github.com/RVCC-IDMX/tz-converter-ZachTheis/issues"
+  },
+  "homepage": "https://github.com/RVCC-IDMX/tz-converter-ZachTheis#readme",
+  "dependencies": {
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33"
+  }
+}
