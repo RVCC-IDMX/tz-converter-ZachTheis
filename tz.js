@@ -32,7 +32,7 @@ if (process.argv.length < 3) {
 }
 
 if (params.format) {
-  timezoneArr = `${moment().tz(localTimezone)}`
+  let timezoneArr = `${moment().tz(localTimezone)}`
     .replace(":", " ")
     .replace(":", " ")
     .split(" ");
@@ -100,8 +100,8 @@ if (params.format) {
     }:${timezoneArr[6]} ${timezoneM}`
   );
 } else {
-  console.log(`The time here is: ${moment().tz(localTimezone)}`);
+  console.log(`The time here is: ${moment().tz(localTimezone).format()}`);
   console.log(
-    `The time in ${targetTimezone} is ${moment().tz(targetTimezone)}`
+    `The time in ${targetTimezone} is ${moment().tz(targetTimezone).format()}`
   );
 }
