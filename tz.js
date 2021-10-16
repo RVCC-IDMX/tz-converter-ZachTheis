@@ -4,12 +4,14 @@ const yargs = require("yargs");
 moment.tz.setDefault("America/New_York");
 
 let targetTimezone;
+let params;
 
-if (process.argv.length != 3) {
+if (process.argv.length < 3) {
   console.log("Usages: node <script-file> <timezone>");
   process.exit(1);
 } else {
-  targetTimezone = process.argv[2];
+  params = yargs.argv;
+  targetTimezone = params._[0];
 }
 
 console.log(
