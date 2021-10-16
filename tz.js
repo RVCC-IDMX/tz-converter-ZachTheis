@@ -1,14 +1,19 @@
-const moment = require('moment-timezone');
+const moment = require("moment-timezone");
+const yargs = require("yargs");
 
-moment.tz.setDefault('America/New_York');
+moment.tz.setDefault("America/New_York");
 
 let targetTimezone;
 
 if (process.argv.length != 3) {
-    console.log("Usages: node <script-file> <timezone>")
-    process.exit(1);
+  console.log("Usages: node <script-file> <timezone>");
+  process.exit(1);
 } else {
-    targetTimezone = process.argv[2];
+  targetTimezone = process.argv[2];
 }
 
-console.log(`The time in the ${targetTimezone} timezone is ${moment().tz(targetTimezone).format()}`);
+console.log(
+  `The time in the ${targetTimezone} timezone is ${moment()
+    .tz(targetTimezone)
+    .format()}`
+);

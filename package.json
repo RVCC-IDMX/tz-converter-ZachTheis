@@ -19,6 +19,7 @@
   "homepage": "https://github.com/RVCC-IDMX/tz-converter-ZachTheis#readme",
   "dependencies": {
     "moment": "^2.29.1",
-    "moment-timezone": "^0.5.33"
+    "moment-timezone": "^0.5.33",
+    "yargs": "^17.2.1"
   }
 }
