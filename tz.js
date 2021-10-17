@@ -23,7 +23,7 @@ const months = {
 };
 
 if (process.argv.length < 3) {
-  console.log("Usages: node <script-file> <timezone>");
+  console.log("Usages: node tz <timezone> (optional: --format)");
   process.exit(1);
 } else {
   params = yargs.argv;
